@@ -5,15 +5,16 @@
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #fff257;
+  color: #33793f;
   min-height: 100vh;
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 36px;  /* Preferred icon size */
+  font-size: 36px; 
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -21,7 +22,7 @@ body {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  color: blue;
+  color: #fff257;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -32,5 +33,155 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
+}
+
+aside {
+  height: 100%;
+  width: 60px;
+  background-color: #33793f;
+  color: #fff257;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+aside a .material-icons {
+  font-size: 36px;
+}
+
+nav {
+  width: 60px;
+  height: 60px;
+  padding: 0 1rem;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+nav div {
+  height: 40px;
+  width: 40px;
+  background-color: #33793f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+ 
+}
+
+nav div span.material-icons {
+  padding: 5px;
+  color: #fff257;
+  font-size: 24px;
+}
+
+main {
+  max-width: 1280px;
+  margin: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px 20px;
+  /* width: 80%; */
+  justify-content: center; 
+  align-items: center;
+  align-content: center;
+}
+
+main section {
+  background-color: #fff257;
+  color: #33793f;
+  height: 620px;
+  width: 360px;
+  /* text-align: center; */
+  padding: 20px 20px 60px;
+  position: relative;
+  border: 1px solid #33793f;
+  /* margin: 60px 10px 10px 10px; */
+}
+
+
+
+main section .sub {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #33793f;
+  color: #fff257;
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 40px;
+  text-align: center;
+}
+
+main section .title {
+  position: relative;
+  margin: 10px auto;
+  font-family: 'Montserrat', sans-serif;
+  /* width: 150px;
+  height: 150px; */
+  font-size: 36px;
+  font-weight: 700;
+  /* padding: 10px; */
+  /* text-decoration: underline;
+  text-underline-position: under; */
+  /* text-decoration-thickness: 5%; */
+  /* text-underline-offset: 15px; */
+}
+
+main section .text {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  /* margin: 20px auto; */
+  /* width: 150px;
+  height: 150px; */
+  font-size: 16x;
+  font-weight: 400;
+  line-height: 24px;
+  /* padding: 10px; */
+}
+
+main section .button {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  inset: auto 0 0 0;
+  /* margin: auto; */
+  background-color: #fff257;
+  color: #33793f;
+  
+  border: 1px solid #33793f;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section .button span.material-icons {
+  padding: 5px;
+  color: #33793f;
+  font-size: 18px;
+}
+
+main section .button:hover {
+  background-color: #33793f;
+  color: #fff257;
+  border: 1px solid #fff257;
+}
+
+main section .button:hover .material-icons {
+  color: #fff257;
 }
